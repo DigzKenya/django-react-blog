@@ -1,0 +1,1 @@
+web: gunicorn --chdir blog_backend blog_backend.wsgi

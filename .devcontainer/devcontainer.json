@@ -1,0 +1,19 @@
+{
+    "name": "Django-React-PostgreSQL",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "postCreateCommand": "pip install django djangorestframework django-cors-headers psycopg2-binary && npm install -g npm",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode"
+            ]
+        }
+    },
+    "forwardPorts": [8000, 3000, 5432]
+}
